@@ -7,10 +7,12 @@ import { HomeComponent } from './home/home.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { RouterModule, Routes } from '@angular/router';
+import { GallryComponent } from './gallry/gallry.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'contact', component: ContactusComponent },
+  { path: 'gallery', component: GallryComponent },
   
 ];
 
@@ -19,7 +21,8 @@ const appRoutes: Routes = [
     AppComponent,
     HomeComponent,
     CarouselComponent,
-    ContactusComponent
+    ContactusComponent,
+    GallryComponent
   ],
   imports: [
     BrowserModule,
